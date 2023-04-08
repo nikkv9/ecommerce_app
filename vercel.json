@@ -3,7 +3,7 @@
 
   "name": "ecom-app",
 
-  "builds": [{ "src": "*.js", "use": "@vercel/node" }],
+  "builds": [{ "src": "app.js", "use": "@vercel/node" }],
 
   "routes": [{ "src": "/(.*)", "dest": "/app.js" }]
 }
