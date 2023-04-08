@@ -40,21 +40,9 @@ cloudinary.config({
 });
 
 // listen
-// app.listen(port, (req, res) => {
-//   console.log(`server is running at ${port}`);
-// });
-
-// vercel
-if (port) {
-  app.listen(port, (req, res) => {
-    console.log(`server is running at ${port}`);
-  });
-}
-//
+app.listen(port, (req, res) => {
+  console.log(`server is running at ${port}`);
+});
 
 // error handling middleware
 app.use(errorMdlwr);
-
-// vercel
-export default app;
-//
