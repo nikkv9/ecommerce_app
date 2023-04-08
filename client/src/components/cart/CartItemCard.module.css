@@ -1,0 +1,74 @@
+.cartItemCard {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  flex: 2;
+}
+.cartItemCard img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+}
+
+.cartItemCard div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+}
+.cartItemCard div * {
+  margin-bottom: 1rem;
+}
+.cartItemCard div a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+.cartItemCard div a:hover {
+  text-decoration: underline;
+}
+.cartItemCard div h3 {
+  color: rgb(55, 55, 55);
+}
+.cartItemCard div p {
+  color: tomato;
+  cursor: pointer;
+}
+@media (max-width: 930px) {
+  .cartItemCard div {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 750px) {
+  .cartItemCard div {
+    margin-left: 0.5rem;
+  }
+  .cartItemCard div a {
+    font-size: 1.2rem;
+  }
+  .cartItemCard div h3 {
+    font-size: 0.8rem;
+  }
+  .cartItemCard div p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 650px) {
+  .cartItemCard img {
+    height: 5rem;
+    width: 5rem;
+  }
+  .cartItemCard {
+    padding: 0;
+  }
+}
+@media (max-width: 550px) {
+  .cartItemCard div a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 415px) {
+  .cartItemCard img {
+    height: 3rem;
+    width: 3rem;
+  }
+}

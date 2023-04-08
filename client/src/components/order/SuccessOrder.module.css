@@ -1,0 +1,38 @@
+.successOrder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 4rem);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container * {
+  margin-bottom: 2rem;
+}
+.container h2 {
+  color: rgb(0, 199, 3);
+  text-align: center;
+}
+.successIcon {
+  font-size: 5rem !important;
+  color: crimson !important;
+}
+.container a {
+  background-color: rgb(31, 31, 31);
+  padding: 0.7rem 1rem;
+  border-radius: 0.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 70%;
+  }
+  .successIcon {
+    font-size: 3rem !important;
+  }
+}

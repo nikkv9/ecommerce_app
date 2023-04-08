@@ -1,0 +1,54 @@
+.payment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+.form {
+  width: 70%;
+  height: 100%;
+  margin-top: 3rem;
+}
+.form p {
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem 0;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.form > div {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.paymentInput {
+  padding: 1rem 4rem;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+.form > div > svg {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.623);
+  margin-right: -3rem;
+}
+
+.paymentBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paymentBtn input {
+  border: none;
+  background-color: tomato;
+  color: white;
+  font: 400 0.8rem;
+  border-radius: 0.2rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  outline: none;
+  width: 10rem;
+}

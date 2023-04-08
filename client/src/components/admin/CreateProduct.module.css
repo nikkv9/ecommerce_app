@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 1rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  width: 25rem;
+  transition: 0.5s ease;
+}
+
+.form input,
+.form textarea,
+.form select {
+  padding: 0.7rem 1rem;
+  outline: none;
+  font-size: 1.1rem;
+  width: 100%;
+  border: none;
+  color: black;
+}
+
+.form div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  padding: 0.3rem 1rem;
+}
+.form input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.2rem;
+  transition: 0.5s ease;
+  color: aliceblue;
+  font-size: 0.9rem;
+  background-color: rgb(52, 52, 52);
+  padding: 0.8rem;
+}
+.form input[type="file"] {
+  color: transparent;
+}
+.imgDiv {
+  border: none !important;
+}
+
+.btn {
+  padding: 0.8rem !important;
+  color: white !important;
+  background-color: rgb(14, 95, 255) !important;
+}
+.btn:hover {
+  background-color: rgb(43, 114, 255) !important;
+}

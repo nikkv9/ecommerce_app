@@ -1,0 +1,29 @@
+.myOrders {
+  height: calc(100vh - 4.1rem);
+}
+.myOrders p {
+  text-align: center;
+  background-color: rgb(56, 56, 56);
+  color: white;
+  padding: 0.8rem;
+}
+.greenColor {
+  color: green;
+}
+.redColor {
+  color: red;
+}
+.dataGrid {
+  padding: 1rem 2rem;
+}
+.dataGrid > div {
+  border: none;
+}
+.dataGrid a {
+  color: rgba(0, 0, 0, 0.7);
+  transition: 0.5s ease;
+}
+
+.dataGrid a:hover {
+  color: tomato;
+}

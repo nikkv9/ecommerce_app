@@ -1,0 +1,29 @@
+.form {
+  width: 30%;
+  margin: auto;
+  margin-top: 4rem;
+}
+.form div {
+  display: flex;
+  align-items: center;
+  color: gray;
+  border: 1px solid gray;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+.form input {
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+}
+.greenColor {
+  color: green;
+}
+.redColor {
+  color: red;
+}
+.dataGrid {
+  margin-top: 2rem;
+}

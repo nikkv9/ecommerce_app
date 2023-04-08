@@ -1,0 +1,119 @@
+.footer {
+  background-color: rgb(32, 41, 48);
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.contact h1 {
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: rgb(0, 186, 186);
+  text-align: center;
+}
+
+.contactBox {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+}
+.contactBox input,
+textarea {
+  background: transparent;
+  border: 1px solid rgb(0, 186, 186);
+  color: white;
+  padding: 0.7rem;
+  border-radius: 0.2rem;
+  margin-top: 0.5rem;
+  outline: none;
+}
+.contactBox ::-webkit-input-placeholder {
+  color: aliceblue;
+}
+
+.contactBox button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  background: none;
+  color: rgb(0, 186, 186);
+  border: 1px solid rgb(0, 186, 186);
+  cursor: pointer;
+  border-radius: 0.2rem;
+  transition: 0.5s ease;
+  margin-top: 1rem;
+}
+.contactBox button:hover {
+  transform: scale(0.95);
+}
+
+.social h1 {
+  color: rgb(0, 186, 186);
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0 5rem;
+}
+.socialLinks a {
+  margin-right: 1rem;
+}
+
+.socialLinks a .muiIcons {
+  font-size: 3rem;
+  color: aliceblue;
+}
+
+.footer p {
+  text-align: center;
+  margin-top: 2rem;
+  width: 100%;
+  border-top: 1px solid rgb(23, 22, 22);
+  padding: 0.9rem 0;
+  color: aliceblue;
+}
+@media (max-width: 800px) {
+  .contact h1,
+  .social h1 {
+    font-size: 1.2rem;
+  }
+  .contactBox button {
+    font-size: 0.7rem;
+    padding: 0.7rem;
+  }
+
+  .socialLinks a .muiIcons {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .container {
+    flex-direction: column;
+  }
+  .contact {
+    margin-bottom: 2rem;
+  }
+  .footer p {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 400px) {
+  .contact h1,
+  .social h1 {
+    font-size: 1rem;
+  }
+  .contactBox {
+    width: 15rem;
+  }
+}

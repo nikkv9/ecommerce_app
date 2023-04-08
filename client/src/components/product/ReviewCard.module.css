@@ -1,0 +1,13 @@
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border: 2px solid lightgray;
+  margin: 2rem;
+  border-radius: 0.2rem;
+}
+.reviewCard p,
+span {
+  margin-top: 1rem;
+}

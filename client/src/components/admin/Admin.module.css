@@ -1,0 +1,63 @@
+.admin {
+  display: flex;
+}
+.container {
+  flex: 1;
+  padding: 2rem 0;
+}
+.container > h1 {
+  text-align: center;
+  font: 2rem "Roboto";
+  margin: 1rem 0;
+}
+
+.summary {
+  margin: 2rem 0;
+}
+.subSummary1 {
+  background-color: teal;
+  padding: 1rem 0;
+}
+.subSummary1 p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: aliceblue;
+}
+.subSummary2 {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.subSummary2 > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  text-decoration: none;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+.subSummary2 a:nth-child(1) {
+  background-color: crimson;
+}
+.subSummary2 a:nth-child(2) {
+  background-color: rgb(40, 40, 40);
+}
+.subSummary2 a:nth-child(3) {
+  background-color: rgb(29, 55, 255);
+}
+.subSummary2 p {
+  margin-bottom: 0.2rem;
+  font-size: 1.4rem;
+}
+.lineChart {
+  width: 75%;
+  margin: auto;
+}
+.doughnutChart {
+  width: 30%;
+  margin: auto;
+}

@@ -1,0 +1,110 @@
+.products h2 {
+  color: aliceblue;
+  text-align: center;
+  background-color: teal;
+  padding: 0.7rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.productsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 75vh;
+}
+.productsContainer h3 {
+  margin: 1rem 0;
+  color: crimson;
+}
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.paginationBox ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.paginationBox ul li {
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding: 1vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.paginationBox ul li:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.paginationBox ul li:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.paginationBox ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgb(80, 80, 80);
+  transition: all 0.3s;
+}
+
+.paginationBox ul li:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.paginationBox ul li:hover .paginationBox ul li a {
+  color: rgb(0, 0, 0);
+}
+
+.pageItemActive {
+  background-color: tomato;
+}
+
+.pageLinkActive {
+  color: white;
+}
+
+.filterBox {
+  width: 8rem;
+  position: absolute;
+  top: 10rem;
+  left: 1rem;
+}
+.filterBox p {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  color: rgb(37, 37, 37);
+  letter-spacing: 0.1rem;
+  background-color: lightgray;
+}
+.filterBox p:nth-child(3),
+.filterBox p:nth-child(5) {
+  margin-top: 2rem;
+}
+
+.catgBox {
+  padding-top: 2rem;
+}
+.catgBox li {
+  margin-bottom: 1rem;
+  list-style: none;
+  color: rgb(84, 84, 84);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.catgBox li:hover {
+  color: tomato;
+}
+
+@media (max-width: 500px) {
+  .products h2 {
+    font-size: 1rem;
+  }
+}

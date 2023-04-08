@@ -1,0 +1,167 @@
+.loginSignup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    to right top,
+    #0a0f17,
+    #080f1c,
+    #051020,
+    #031025,
+    #001029
+  );
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 3rem 5rem;
+  overflow: hidden;
+  width: 25rem;
+  height: 65vh;
+  position: relative;
+}
+.loginSignupToggle {
+  display: flex;
+  align-items: center;
+}
+.loginSignupToggle p {
+  color: aliceblue;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  transition: ease 0.5s;
+}
+.loginSignupToggle p:hover {
+  color: tomato;
+}
+.switchBtn {
+  height: 0.2rem;
+  background-color: tomato;
+  width: 50%;
+  border: none;
+  border-radius: 0.1rem;
+  transition: 0.5s ease;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+  position: absolute;
+  width: 25rem;
+  transition: 0.5s ease;
+}
+.form a {
+  color: rgb(255, 0, 0);
+  margin: 1rem 0;
+}
+.form a:hover {
+  color: rgb(207, 11, 11);
+}
+.form input {
+  padding: 0.7rem 1rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(240, 248, 255, 0.5);
+  margin-bottom: 1rem;
+  color: aliceblue;
+  outline: none;
+  font-size: 1.1rem;
+  width: 100%;
+}
+.form ::-webkit-input-placeholder {
+  color: aliceblue;
+}
+
+.form button {
+  padding: 0.8rem 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  transition: 0.3s all;
+  color: aliceblue;
+  width: 100%;
+  background-color: rgb(225, 35, 1);
+}
+.form button:hover {
+  transform: scale(1.05);
+}
+
+.signupForm input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  height: 2.5rem;
+  border: none;
+  transition: 0.5s ease;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.9rem;
+}
+.signupForm input[type="file"] {
+  color: transparent;
+}
+
+.signupForm {
+  transform: translateX(150%);
+}
+
+.formLeft {
+  transform: translateX(-150%);
+}
+.switchRight {
+  transform: translateX(100%);
+}
+.neutral {
+  transform: translateX(0%);
+}
+
+@media (max-width: 600px) {
+  .container,
+  .form {
+    width: 20rem;
+  }
+  .form button {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 550px) {
+  .loginSignupToggle p {
+    font-size: 0.8rem;
+  }
+
+  .form input {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 490px) {
+  .container,
+  .form {
+    width: 18rem;
+  }
+}
+@media (max-width: 450px) {
+  .container,
+  .form {
+    width: 15rem;
+  }
+}
+@media (max-width: 400px) {
+  .container,
+  .form {
+    width: 12rem;
+  }
+}
+@media (max-width: 350px) {
+  .container,
+  .form {
+    width: 10rem;
+  }
+}

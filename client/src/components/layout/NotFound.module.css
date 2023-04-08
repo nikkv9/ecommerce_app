@@ -1,0 +1,21 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.notFound h1 {
+  color: red;
+}
+.notFound a {
+  padding: 0.8rem;
+  background-color: rgb(36, 36, 36);
+  color: aliceblue;
+  text-decoration: none;
+  width: 7rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  border-radius: 0.2rem;
+}
